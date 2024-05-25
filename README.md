@@ -1,1 +1,1 @@
-# traininggit
+# Utilisation personnelle de git
