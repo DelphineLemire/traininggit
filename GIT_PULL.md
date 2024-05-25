@@ -59,6 +59,17 @@ résultat: resultat: un message d'erreur quand il existe des modifications non i
 erreur : impossible de tirer avec un rebasage : vous avez des modifications non indexées.
 erreur : veuillez les valider ou les remiser.
 
+Après Commit de toutes mes modifs en locale, j'ai toujours un message d'erreur à cause du readme
+Fusion automatique de README.md
+```
+CONFLIT (contenu) : Conflit de fusion dans README.md
+erreur : impossible d'appliquer b43b0e5... Mise à jour du readme avec différentes commandes
+astuce: Resolve all conflicts manually, mark them as resolved with
+astuce: "git add/rm <conflicted_files>", then run "git rebase --continue".
+astuce: You can instead skip this commit: run "git rebase --skip".
+astuce: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Impossible d'appliquer b43b0e5... Mise à jour du readme avec différentes commandes
+```
 
 ### avance rapide seulement
 
