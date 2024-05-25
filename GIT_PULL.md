@@ -22,6 +22,8 @@ astuce: passer --rebase, --no-rebase ou --ff-only sur la ligne de commande pour
 astuce: remplacer à l'invocation la valeur par défaut configurée.
 ``` 
 
+le git pull tente de merger le contenu distant dans la branche locale
+
 ## configuration 
 
 ### fusion
