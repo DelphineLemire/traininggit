@@ -71,6 +71,71 @@ astuce: To abort and get back to the state before "git rebase", run "git rebase 
 Impossible d'appliquer b43b0e5... Mise à jour du readme avec différentes commandes
 ```
 
+
+
+git pull --rebase m'a ouvert le fichier readme en conflit avec des zones délimitants les écarts 
+j'ai fait évoluer le fichier en le modifiant tel que je le voudrais
+
+le retour de la commande git status est le suivant
+``` 
+rebasage interactif en cours ; sur e588608
+Dernière commande effectuée (1 commande effectuée) :
+   pick b43b0e5 Mise à jour du readme avec différentes commandes
+Prochaines commandes à effectuer (4 commandes restantes) :
+   pick 9120d70 mise à jour de  git pull et ajout de diff
+   pick f8486e3 maj de git pull
+  (utilisez "git rebase --edit-todo" pour voir et éditer)
+Vous êtes en train de rebaser la branche 'main' sur 'e588608'.
+  (réglez les conflits puis lancez "git rebase --continue")
+  (utilisez "git rebase --skip" pour sauter ce patch)
+  (utilisez "git rebase --abort" pour extraire la branche d'origine)
+
+Modifications qui seront validées :
+  (utilisez "git restore --staged <fichier>..." pour désindexer)
+        nouveau fichier : GIT_ADD.md
+        nouveau fichier : GIT_BRANCH.md
+        nouveau fichier : GIT_CLONE.md
+        nouveau fichier : GIT_COMMIT.md
+        nouveau fichier : GIT_FETCH.md
+        nouveau fichier : GIT_PULL.md
+
+Chemins non fusionnés :
+  (utilisez "git restore --staged <fichier>..." pour désindexer)
+  (utilisez "git add <fichier>..." pour marquer comme résolu)
+        modifié des deux côtés :  README.md
+        
+``` 
+
+Après avoir réaliser les commandes requises
+
+git status me dit
+
+```
+rebasage interactif en cours ; sur e588608
+Dernière commande effectuée (1 commande effectuée) :
+   pick b43b0e5 Mise à jour du readme avec différentes commandes
+Prochaines commandes à effectuer (4 commandes restantes) :
+   pick 9120d70 mise à jour de  git pull et ajout de diff
+   pick f8486e3 maj de git pull
+  (utilisez "git rebase --edit-todo" pour voir et éditer)
+Vous êtes actuellement en train d'éditer un commit pendant un rebasage de la branche 'main' sur 'e588608'.
+  (utilisez "git commit --amend" pour corriger le commit actuel)
+  (utilisez "git rebase --continue" quand vous avez effectué toutes vos modifications)
+
+rien à valider, la copie de travail est propre
+
+apres plusieurs git rebase --continue + modif des fichiers au fil de l'eau
+j'ai le message suivant
+
+```
+Sur la branche main
+Votre branche est en avance sur 'origin/main' de 5 commits.
+  (utilisez "git push" pour publier vos commits locaux)
+
+rien à valider, la copie de travail est propre
+
+```
+
 ### avance rapide seulement
 
 ```
