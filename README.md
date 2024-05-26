@@ -14,9 +14,9 @@ STAGING
 
 ## Methodologie
 
-### [Git clone](GIT_CLONE.md)
-### [Git fetch](GIT_FETCH.md)
-### [Git pull](GIT_PULL.md)
+### 1. [Git clone](GIT_CLONE.md) 
+### 2. [Git fetch](GIT_FETCH.md)
+### 3.  [Git pull](GIT_PULL.md)
 ### [Git branch](GIT_BRANCH.md)
 ### [Git add](GIT_ADD.md)
 ### [Git commit](GIT_COMMIT.md)
