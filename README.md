@@ -5,7 +5,12 @@ Si vous constatez des erreurs d'usage ou de description faites moi signe!
 
 ## Concept
 
+HEAD
+
+WORKING DIRECTORY
+
 STAGING 
+
 
 ## Methodologie
 
